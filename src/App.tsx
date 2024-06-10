@@ -34,7 +34,7 @@ function App() {
         {/* button 4  */}
         <button className="btn relative border border-white text-white overflow-hidden inline-flex px-8 py-3 
           before:absolute before:w-0 before:top-[var(--y)] before:left-[var(--x)] before:h-0
-          before:rounded-full before:bg-sky-600 before:translate-x-[-50%] before:translate-y-[-50%]
+          before:rounded-full before:bg-sky-100 before:translate-x-[-50%] before:translate-y-[-50%]
           hover:before:w-[400px] hover:before:h-[400px]
           ">
             <span className='z-30'>Click me!</span>
