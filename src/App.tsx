@@ -6,6 +6,10 @@ function App() {
 
     if (btn) {
       btn.onmousemove = function(e) {
+        // e.pageX é a posição é a medida a partir do canto superior direito da pagina
+        // e.pageY é a posição é a medida a partir do canto superior
+        // btn.offsetLeft retorna a posição x dentro do elemento
+        // btn.offsetTop retorna a posição y dentro do elemento
         const x = e.pageX - btn.offsetLeft;
         const y = e.pageY - btn.offsetTop;
   
