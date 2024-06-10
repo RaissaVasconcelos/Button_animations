@@ -6,13 +6,8 @@ function App() {
 
     if (btn) {
       btn.onmousemove = function(e) {
-        // e.pageX é a posição é a medida a partir do canto superior direito da pagina
-        // e.pageY é a posição é a medida a partir do canto superior
-        // btn.offsetLeft retorna a posição x dentro do elemento
-        // btn.offsetTop retorna a posição y dentro do elemento
         const x = e.pageX - btn.offsetLeft;
         const y = e.pageY - btn.offsetTop;
-  
         btn.style.setProperty('--x', x + 'px');
         btn.style.setProperty('--y', y + 'px');
       }
@@ -39,7 +34,7 @@ function App() {
         {/* button 4  */}
         <button className="btn relative border border-white text-white overflow-hidden inline-flex px-8 py-3 
           before:absolute before:w-0 before:top-[var(--y)] before:left-[var(--x)] before:h-0
-          before:rounded-full before:bg-sky-500 before:translate-x-[-50%] before:translate-y-[-50%]
+          before:rounded-full before:bg-sky-600 before:translate-x-[-50%] before:translate-y-[-50%]
           hover:before:w-[400px] hover:before:h-[400px]
           ">
             <span className='z-30'>Click me!</span>
